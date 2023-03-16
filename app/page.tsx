@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <main>
       <Link href="/posters">Posters Page</Link>
+      <Link href="/spacePosters">Space Posters Page</Link>
     </main>
   );
 }
