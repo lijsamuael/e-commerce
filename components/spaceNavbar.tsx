@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function SpaceNavBar() {
   return (
-    <nav className="flex flex-col bg-black text-white px-[4%] pt-8 pb-32 space-y-12">
+    <nav className="relative flex flex-col z-0 bg-black text-white px-[4%] pt-8 pb-40 space-y-12">
       <div className="flex">
         <Link href="/" className="space-x-2">
           <FontAwesomeIcon icon={faLongArrowLeft} />
