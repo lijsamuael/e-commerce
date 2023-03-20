@@ -1,4 +1,4 @@
-import Posters from "@/components/posters";
+import Posters from "@/components/poster/posters";
 
 export default function PostersPage() {
   const posters = [

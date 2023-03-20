@@ -4,8 +4,8 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 
 
 
-import NavBar from "@/components/navbar";
-import Footer from "@/components/footer";
+import NavBar from "@/components/poster/navbar";
+import Footer from "@/components/poster/footer";
 
 config.autoAddCss = false;
 

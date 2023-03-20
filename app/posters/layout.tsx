@@ -1,4 +1,4 @@
-import NavBar from "@/components/navbar";
+import PosterNavBar from "@/components/poster/navbar";
 
 export default function PostersLayout({
   children,
@@ -7,7 +7,7 @@ export default function PostersLayout({
 }) {
   return (
     <div className="font-space-mono">
-      <NavBar />
+      <PosterNavBar />
       {children}
     </div>
   );

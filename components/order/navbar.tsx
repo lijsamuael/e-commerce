@@ -8,10 +8,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export default function SpaceNavBar() {
+export default function OrderNavBar() {
   return (
     <nav className="relative flex flex-col z-0 bg-black text-white px-[4%] pt-8 pb-40 space-y-12">
-      <div className="flex">
+      <div className="flex items-center">
         <Link href="/" className="space-x-2">
           <FontAwesomeIcon icon={faLongArrowLeft} />
           <span>Back</span>

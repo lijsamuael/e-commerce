@@ -1,13 +1,12 @@
-import Footer from "@/components/footer";
-import SpaceFooter from "@/components/spaceFooter";
-import SpaceNavBar from "@/components/spaceNavbar";
+import OrderFooter from "@/components/order/footer";
+import OrderNavBar from "@/components/order/navbar";
 
-export default function SpacePostersLayout({ children }: { children: any }) {
+export default function OrderLayout({ children }: { children: any }) {
   return (
     <div>
-      <SpaceNavBar />
+      <OrderNavBar />
       {children}
-      <SpaceFooter />
+      <OrderFooter />
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-export default function SpaceFooter() {
+export default function OrderFooter() {
   return (
     <div className="flex flex-col md:flex-row flex-wrap w-full  justify-between bg-black text-white px-[4%]  py-8 md:text-start text-center gap-y-16 gap-x-36">
       <div className="flex flex-col  gap-y-8 ">
