@@ -27,9 +27,9 @@ export default function OrderSummary({width, visiblity}: {width: any, visiblity:
           </div>
           <div className="px-4 py-4 space-y-2">
             <p className="text-lg font-medium">Discount Code</p>
-            <div className="grid grid-cols-3 gap-x-2">
-              <input className="col-span-2 bg-gray-200 px-4 " type="text" />
-              <button className="col-span-1 border border-black py-4 px-8 ">
+            <div className="grid grid-cols-3 gap-x-2 gap-y-4">
+              <input className=" col-span-3 ssm:col-span-2 bg-gray-200 px-4 py-4 " type="text" />
+              <button className=" col-span-3 ssm:col-span-1 border border-black py-4 px-8 ">
                 Apply
               </button>
             </div>

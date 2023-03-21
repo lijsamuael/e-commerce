@@ -5,6 +5,7 @@ export default function Home() {
     <main className="space-x-16">
       <Link href="/posters">Posters </Link>
       <Link href="/order">Order</Link>
+      <Link href="/cards">Cards</Link>
     </main>
   );
 }
