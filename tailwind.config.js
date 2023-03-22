@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'space-mono': ['Space Mono', 'monospace']
+      'space-mono': ['Space Mono', 'monospace'],
+      sans: ["Inter", "sans-serif"],
     },
     screens: {
       ssm: "450px",
