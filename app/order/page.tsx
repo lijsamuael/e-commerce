@@ -1,7 +1,7 @@
+import CustomForm from "@/components/order/customForm";
 import OrderSummary from "@/components/order/orderSummary";
-import Payment from "@/components/order/payment";
-import Shipping from "@/components/order/shipping";
 import Summary from "@/components/order/summary";
+import { shipping, payment } from "../../components/order/inputs";
 
 export default function Order() {
   return (
@@ -14,9 +14,9 @@ export default function Order() {
           <span className="hidden ssm:flex flex-grow border-dotted border-b-2 border-white mb-4"></span>
         </div>
         <Summary />
-        <Shipping />
+        <CustomForm form={shipping} />
         <div className="space-y-2">
-          <Payment />
+          <CustomForm form={payment} />
           <OrderSummary width="w-full" visiblity="flex lg:hidden" />
         </div>
       </div>
