@@ -13,7 +13,7 @@ export default function AdressForm() {
             <option value={country.name}>{country.name}</option>
           ))}
         </select>
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <input
             type="text"
             placeholder="First name"
@@ -39,7 +39,7 @@ export default function AdressForm() {
           placeholder="Appartment, suit, etc. (optional)"
           className="border rounded-lg p-4 w-full"
         />
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <input
             type="text"
             placeholder="City"
