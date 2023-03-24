@@ -47,8 +47,8 @@ export default function PaymentForm() {
         <PosterMark />
       </div>
       <div className="flex flex-wrap-reverse justify-between w-full items-center">
-        <div className="flex justify-center items-center mx-auto space-y-4">
-          <img src="./icons/smaller.png" alt="" className="w-4" />
+        <div className="flex   items-center mx-auto sm:m-1 gap-y-4">
+          <img src="./icons/smaller.png" alt="" className="w-4 " />
           <Link href="/cards" className="text-blue-500">
             Return to Cart
           </Link>
