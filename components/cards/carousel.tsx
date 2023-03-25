@@ -56,7 +56,7 @@ export default function Carousel({
   return (
     <div className="carousel space-y-4  py-8 ">
       <h1 className="text-center text-3xl font-bold">{heading}</h1>
-      <div className=" overflow-hidden space-y-8">
+      <div className=" overflow-hidden space-y-8 flex flex-col ">
         <div className="relative top-[270px] flex justify-between   items-center ">
           <button
             onClick={movePrev}
@@ -82,7 +82,6 @@ export default function Carousel({
           <button
             onClick={moveNext}
             className=" text-black rounded-full w-8  bg-white flex items-center justify-center  text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-
             disabled={isDisabled("next")}
           >
             <svg
@@ -104,10 +103,9 @@ export default function Carousel({
         </div>
         <div
           ref={carousel}
-          className="carousel-container relative flex gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+          className="carousel-container relative flex  gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
         >
           {children}
-          
         </div>
         <div className="w-full flex justify-center">
           <button className="text-sm border-b border-black inline-block">
