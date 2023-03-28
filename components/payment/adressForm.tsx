@@ -13,6 +13,7 @@ const inputs = [
         placeholder: "First name",
         type: "text",
         class: "",
+        image: ""
       },
       {
         name: "Last name",
@@ -20,6 +21,7 @@ const inputs = [
         placeholder: "Last name",
         type: "text",
         class: "",
+        image: ""
       },
     ],
   },
@@ -35,6 +37,7 @@ const inputs = [
         placeholder: "Adress",
         type: "text",
         class: "",
+        image: ""
       },
     ],
   },
@@ -49,6 +52,7 @@ const inputs = [
         placeholder: "Appartment, suit, etc. (optional)",
         type: "text",
         class: "",
+        image: ""
       },
     ],
   },
@@ -63,6 +67,7 @@ const inputs = [
         placeholder: "City",
         type: "text",
         class: "",
+        image: ""
       },
       {
         name: "State",
@@ -70,6 +75,7 @@ const inputs = [
         placeholder: "State",
         type: "text",
         class: "",
+        image: ""
       },
       {
         name: "ZIP code",
@@ -77,6 +83,7 @@ const inputs = [
         placeholder: "ZIP code",
         type: "text",
         class: "",
+        image: ""
       },
     ],
   },
@@ -91,6 +98,7 @@ const inputs = [
         placeholder: "Phone",
         type: "text",
         class: "",
+        image: "question.png"
       },
     ],
   },
@@ -102,7 +110,11 @@ export default function AdressForm() {
       <h2 className="text-xl font-medium">Shipping Address</h2>
       <Warnning message="Please check your address to ensure accurate delivery." />
       <form action="" className="flex flex-col text-gray-600 gap-4">
-        <select name="" id="" className="border rounded-lg p-4 w-full">
+        <select
+          name=""
+          id=""
+          className="bg-white border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-4 flex justify-around "
+        >
           <option selected>Country/Region</option>
           {countries.map((country) => (
             <option value={country.name}>{country.name}</option>
@@ -111,14 +123,14 @@ export default function AdressForm() {
         {inputs.map((input) =>
           input.size === 1 ? (
             input.heading.map((data) => (
-              <>
+              <div className="flex items-center border rounded-lg">
                 <input
                   type={data.inputType}
                   placeholder={data.placeholder}
-                  className="border rounded-lg p-4 w-full"
+                  className=" p-4  w-full focus:outline-0 border-l rounded-lg"
                 />
-                <p className="font-semibold px-4">{}</p>
-              </>
+                <img src={`./icons/${data.image}`} alt="" className="p-4 w-12" />
+              </div>
             ))
           ) : (
             <div className={input.class}>
@@ -126,19 +138,13 @@ export default function AdressForm() {
                 <input
                   type={data.inputType}
                   placeholder={data.placeholder}
-                  className="border rounded-lg p-4 w-full"
+                  className="border rounded-lg p-4 w-full focus:outline-0 "
                 />
               ))}
             </div>
           )
         )}
-        <div className="flex justify-between border rounded-lg p-4 w-full items-center">
-          <img
-            src="./icons/question-mark-circle.png"
-            alt=""
-            className="w-4 h-4 "
-          />
-        </div>
+
       </form>
     </div>
   );

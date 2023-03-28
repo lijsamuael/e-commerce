@@ -39,7 +39,7 @@ export default function PaymentItemList() {
           <p>$179.94</p>
         </div>
         <div className="flex justify-between">
-          <div className="flex justify-start items-center">
+          <div className="flex justify-between gap-x-2 items-center">
             <p className="text-sm">Shipping</p>
             <img src="/icons/question.png" alt="" className="w-4" />
           </div>

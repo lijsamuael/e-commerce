@@ -3,7 +3,7 @@ import AddedItems from "./addedItems";
 export default function NewArivals() {
   return (
     <>
-      <h4 className="text-center">ADD THIS NEW ARRIVALS!</h4>
+      <h4 className="text-center pt-4 lg:pt-2">ADD THIS NEW ARRIVALS!</h4>
       <AddedItems
         name="Deez Nutz"
         price={29.9}

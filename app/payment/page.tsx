@@ -4,10 +4,10 @@ import PaymentItemList from "@/components/payment/paymentItemList";
 export default function Payment() {
   return (
     <div className=" font-sans flex   gap-x-16 w-full ">
-      <div className=" bg-gray-100 xl:bg-white w-full xl:w-[55%] items-center xl:flex-none px-[5%] sm:px-[15%] xl:px-2 ">
+      <div className=" pt-16 bg-white w-full lg:w-[55%] items-center lg:flex-none px-[1%] ssm:px-[5%] sm:px-[15%] lg:px-2 ">
         <PaymentForm />
       </div>
-      <div className=" bg-gray-100 w-full p-8 hidden xl:flex">
+      <div className=" pt-8 bg-gray-50 w-full h-screen p-8 hidden lg:flex">
         <PaymentItemList />
       </div>
     </div>

@@ -4,10 +4,10 @@ export default function ContactInfo() {
   return (
     <div className="flex flex-col w-full space-y-4">
       <div className="flex justify-between items-center ">
-        <h3 className="text-2xl font-medium">Contact Information</h3>
-        <div className="flex space-x-2">
-          <p>Already have an account?</p>
-          <Link href={""} className="text-blue-500">Log in</Link>
+        <div className="flex space-x-2 items-center">
+        <h3 className="text-lg sm:text-2xl  font-normal sm:font-medium">Contact Information</h3>
+          <p className="text-sm sm:text-base ">Already have an account?</p>
+          <Link href={""} className="text-blue-500 whitespace-nowrap">Log in</Link>
         </div>
       </div>
       <div className="pt-4">
@@ -15,7 +15,7 @@ export default function ContactInfo() {
       </div>
       <div className="flex space-x-4 items-center">
       <input type="checkbox" className="w-6 h-6 rounded-full" />
-        <span>Email with me news and offers</span>
+        <span className="text-sm sm:text-base">Email with me news and offers</span>
       </div>
       <div></div>
       <div></div>

@@ -14,7 +14,7 @@ export default function AddedItems({
   return (
     <div className="flex justify-between items-center border-b py-2">
       <div className="flex items-center  p-2">
-        <div className="p-2 rounded-lg bg-white">
+        <div className=" rounded-lg bg-white border border-gray-200">
           <img src={`./images/${image}`} alt="" className="w-16" />
         </div>
         <div className="flex flex-col ">
