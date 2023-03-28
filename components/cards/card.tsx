@@ -16,8 +16,8 @@ export default function Card({
   rating?: boolean;
 }) {
   return (
-    <div className="space-y-4 flex flex-col w-full">
-      <div className="flex flex-col bg-gray-100  w-44 md:w-54 lg:w-72   p-4 gap-y-16 ">
+    <div className="space-y-4 flex flex-col keen-slider__slide w-96 ">
+      <div className="flex flex-col bg-gray-100  p-4 gap-y-8 md:gap-y-16 lg:gap-y-8 xl:gap-y-16 ">
         <div className="self-start bg-white border border-gray-200">
           {tag ? <p className="px-3 py-2 ">{tagName}</p> : null}
         </div>
@@ -29,7 +29,7 @@ export default function Card({
         </div>
       </div>
       {rating ? (
-        <div className="space-y-2 w-44 md:w-54 lg:w-72 ">
+        <div className="space-y-2 ">
           <div className="flex justify-between">
             <h3 className="text-xl font-semibold">{name}</h3>
             <h4>${price}</h4>
@@ -46,7 +46,7 @@ export default function Card({
           ></div>
         </div>
       ) : (
-        <div className="space-y-2 w-44 md:w-54 lg:w-72 ">
+        <div className="space-y-2  ">
           <h3 className="text-xl font-semibold">{name}</h3>
           <h4>${price}</h4>
 

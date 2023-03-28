@@ -6,7 +6,7 @@ import data from "../../model/data.json";
 
 export default function Cards() {
   return (
-    <div className="mx-auto max-w-[1500px] px-[5%] ">
+    <div className="mx-auto  px-[5%] ">
       <Carousel heading="New Arrivals">
         {data.shirts.map((shirt) => (
           <Card
