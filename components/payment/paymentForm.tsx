@@ -10,7 +10,7 @@ import ShowOrderSummaryTag from "./showOrderSummaryTag";
 
 export default function PaymentForm() {
   return (
-    <div className="flex flex-col items-center space-y-8 lg:max-w-[660px]  lg:ml-auto">
+    <div className="flex flex-col items-center space-y-8 lg:max-w-[660px]   lg:ml-auto">
       <img src="./images/logo.png" alt="" />
       <ShowOrderSummaryTag />
       <HeaderLink />

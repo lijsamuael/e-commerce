@@ -3,12 +3,11 @@ import Carousel from "@/components/cards/carousel";
 
 import data from "../../model/data.json";
 
-
 export default function Cards() {
   return (
-    <div className="mx-auto  px-[5%] ">
+    <div className=" pb-8">
       <Carousel heading="New Arrivals">
-        {data.shirts.map((shirt) => (
+        {data.shirts.map((shirt, index, array) => (
           <Card
             name={shirt.name}
             image={shirt.image}
@@ -17,11 +16,13 @@ export default function Cards() {
             price={shirt.price}
             color={shirt.color}
             rating={shirt.rating}
+            index={index}
+            array={array}
           />
         ))}
       </Carousel>
       <Carousel heading="Swim">
-        {data.shorts.map((short) => (
+        {data.shorts.map((short, index, array) => (
           <Card
             name={short.name}
             image={short.image}
@@ -29,11 +30,13 @@ export default function Cards() {
             price={short.price}
             color={short.color}
             rating={short.rating}
+            index={index}
+            array={array}
           />
         ))}
       </Carousel>
-      <Carousel heading="Best Sellers">
-        {data.bests.map((best) => (
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 sm:gap-x-8 gap-x-4 xl:gap-x-12 mx-auto px-[5%]">
+        {data.bests.map((best, index, array) => (
           <Card
             name={best.name}
             image={best.image}
@@ -41,9 +44,16 @@ export default function Cards() {
             price={best.price}
             color={best.color}
             rating={best.rating}
+            index={index}
+            array={array}
           />
         ))}
-      </Carousel>
+      </div>
+      <div className="w-full flex justify-center pt-8">
+        <button className="text-sm border-b border-black inline-block">
+          VIEW COLLECTION
+        </button>
+      </div>
     </div>
   );
 }

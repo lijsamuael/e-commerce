@@ -3,7 +3,7 @@ import NewArivals from "./newArrivals";
 
 export default function PaymentItemList() {
   return (
-    <div className="flex flex-col  p-4 space-y-2 max-w-[540px]">
+    <div className="flex flex-col  p-4 space-y-2 max-w-[540px] ">
       <AddedItems
         name="Chocolate Chip Cookies"
         price={179.94}

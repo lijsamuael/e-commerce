@@ -13,7 +13,7 @@ const inputs = [
         placeholder: "First name",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
       {
         name: "Last name",
@@ -21,7 +21,7 @@ const inputs = [
         placeholder: "Last name",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
     ],
   },
@@ -37,7 +37,7 @@ const inputs = [
         placeholder: "Adress",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
     ],
   },
@@ -52,7 +52,7 @@ const inputs = [
         placeholder: "Appartment, suit, etc. (optional)",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
     ],
   },
@@ -67,7 +67,7 @@ const inputs = [
         placeholder: "City",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
       {
         name: "State",
@@ -75,7 +75,7 @@ const inputs = [
         placeholder: "State",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
       {
         name: "ZIP code",
@@ -83,7 +83,7 @@ const inputs = [
         placeholder: "ZIP code",
         type: "text",
         class: "",
-        image: ""
+        image: "",
       },
     ],
   },
@@ -98,7 +98,7 @@ const inputs = [
         placeholder: "Phone",
         type: "text",
         class: "",
-        image: "question.png"
+        image: "question.png",
       },
     ],
   },
@@ -110,16 +110,24 @@ export default function AdressForm() {
       <h2 className="text-xl font-medium">Shipping Address</h2>
       <Warnning message="Please check your address to ensure accurate delivery." />
       <form action="" className="flex flex-col text-gray-600 gap-4">
-        <select
-          name=""
-          id=""
-          className="bg-white border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-4 flex justify-around "
-        >
-          <option selected>Country/Region</option>
-          {countries.map((country) => (
-            <option value={country.name}>{country.name}</option>
-          ))}
-        </select>
+        <div className="flex items-center border rounded-lg">
+          <select
+            name=""
+            id=""
+            className="focus:outline-0 bg-white  border-gray-300  text-gray-900  border-l rounded-lg  w-full p-4 flex justify-around appearance-none"
+          >
+            <option selected>Country/Region</option>
+            {countries.map((country) => (
+              <option value={country.name}>{country.name}</option>
+            ))}
+          </select>
+          <img
+            src="./icons/downward.png
+          "
+            alt=""
+            className="p-4 w-12"
+          />
+        </div>
         {inputs.map((input) =>
           input.size === 1 ? (
             input.heading.map((data) => (
@@ -129,7 +137,11 @@ export default function AdressForm() {
                   placeholder={data.placeholder}
                   className=" p-4  w-full focus:outline-0 border-l rounded-lg"
                 />
-                <img src={`./icons/${data.image}`} alt="" className="p-4 w-12" />
+                <img
+                  src={`./icons/${data.image}`}
+                  alt=""
+                  className="p-4 w-12"
+                />
               </div>
             ))
           ) : (
@@ -144,7 +156,6 @@ export default function AdressForm() {
             </div>
           )
         )}
-
       </form>
     </div>
   );

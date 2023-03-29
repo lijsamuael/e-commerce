@@ -11,27 +11,23 @@ export default function Carousel({
   children: React.ReactNode;
   heading: string;
 }) {
-  let myMediaQuery = window.matchMedia("(min-width: 700px)");
 
   const [sliderRef] = useKeenSlider({
+    mode: "free-snap",
     breakpoints: {
-      "(min-width: 400px)": {
-        slides: { perView: 2, spacing: 48 },
+      "(max-width: 765px)": {
+        slides: { perView: 2, spacing: 16 },
       },
-      "(max-width: 600px)": {
-        slides: { perView: 2, spacing: 24 },
+      "(min-width: 765px)": {
+        slides: { perView: 3, spacing: 20 },
       },
-      "(min-width: 1000px)": {
-        slides: { perView: 4, spacing: 48 },
+      "(min-width: 1024px)": {
+        slides: { perView: 4, spacing: 32 },
       },
-      "(min-width: 2000px)": {
-        slides: { perView: 6, spacing: 48 },
-      },
-      "(min-width: 3000px)": {
-        slides: { perView: "auto", spacing: 48 },
+      "(min-width: 1536px)": {
+        slides: { perView: 4, spacing: 56 },
       },
     },
-    slides: { perView: 1 },
   });
 
   return (
