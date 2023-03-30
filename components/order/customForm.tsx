@@ -23,7 +23,7 @@ export default function CustomForm({
 }) {
   return (
     <>
-      <div className="border border-black px-[5%] py-8 space-y-8 h-full ">
+      <div className="border border-black px-[5%] py-4 space-y-8 h-full ">
         <div className="border-b border-gray-400 py-8 flex justify-between items-center">
           <h3 className="text-2xl">
             {form.order}. {form.name}

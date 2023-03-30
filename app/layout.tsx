@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-space-mono">
+      <body className="font-space-mono box-border">
         {children}
       </body>
     </html>
