@@ -21,9 +21,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`box-border gap-y-4 flex flex-col keen-slider__slide  ${
-        index == 0 ? `pl-[5%]` : `pl-0`
-      }  ${array.length - 1 === index ? `pr-[5%]` : null}`}
+      className="box-border gap-y-4 flex flex-col keen-slider__slide"
     >
       <div className="flex flex-col bg-gray-100  p-4 gap-y-8   2xl:gap-y-16 ">
         <div className="self-start bg-white border border-gray-200">

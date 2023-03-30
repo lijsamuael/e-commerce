@@ -31,7 +31,7 @@ export default function Carousel({
   });
 
   return (
-    <div className="space-y-4  py-8">
+    <div className="space-y-4  py-8 px-[5%]">
       <h1 className="text-center text-3xl font-bold">{heading}</h1>
       <div className=" space-y-8 flex flex-col ">
         <div className="keen-slider flex justify-between" ref={sliderRef}>
