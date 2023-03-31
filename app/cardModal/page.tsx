@@ -9,13 +9,19 @@ interface CardModalProps {
   price: number;
   name: string;
   color: string;
-  sizes: string[];
+  sizes?: string[];
   closeAction: MouseEventHandler<HTMLButtonElement>;
+  openCartAction: MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function CardModal(props: CardModalProps) {
   function handleClose(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     props.closeAction(event);
+  }
+  function handleCartOpen(
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) {
+    props.openCartAction(event);
   }
   const { modalState, image, price, name, color, sizes } = props;
   return (
@@ -78,7 +84,10 @@ export default function CardModal(props: CardModalProps) {
                   </Link>
                 </div>
               </p>
-              <button className="w-full py-1 text-center border-2 border-black">
+              <button
+                className="w-full py-1 text-center border-2 border-black"
+                onClick={handleCartOpen}
+              >
                 ADD TO CART
               </button>
               <button className="w-full py-1 text-center text-white bg-indigo-500 border border-indigo-500  flex items-center justify-center">
@@ -89,6 +98,7 @@ export default function CardModal(props: CardModalProps) {
           </div>
         </div>
       )}
+      {}
     </>
   );
 }

@@ -4,39 +4,53 @@ import CartItem from "@/components/cartModal/cartItem";
 import { MouseEventHandler } from "react";
 import { isTemplateSpan } from "typescript";
 
-import data from "../../model/cart.json"
+import data from "../../model/cart.json";
 
 interface CartModalProps {
-  modalState: boolean;
-  //   image: string;
-  //   price: number;
-  //   name: string;
-  //   color: string;
-  //   sizes: string[];
-  closeAction: MouseEventHandler<HTMLButtonElement>;
+  cartState: boolean;
+  image: string;
+  price: number;
+  name: string;
+  color: string;
+  sizes: string[];
+  closeCartAction: MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function CartModal(props: CartModalProps) {
-  function handleClose(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-    props.closeAction(event);
+  function handleCartClose(
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) {
+    props.closeCartAction(event);
   }
-  const {
-    modalState,
-    // , image, price, name, color, sizes
-  } = props;
+  const { cartState, image, price, name, color, sizes } = props;
   return (
     <>
-      {
+      {cartState && (
         <div className="  fixed z-10 top-0 left-0 bg-gray-600  w-full h-full flex items-start justify-end gap-x-4 bg-opacity-40">
-          <button className="top-0 w-4 ml-4" onClick={handleClose}>
+          <button className="top-0 w-4 ml-4" onClick={handleCartClose}>
             <img className="pt-4" src="./icons/cancel.png " alt="" />
           </button>
           <div className="overflow-y-auto top-0 w-[350px] bg-white h-full pt-8 space-y-4 px-4 flex flex-col  pb-8">
             <p className="text-center text-3xl font-bold">YOUR CART</p>
             <hr className="" />
-            {data.cart.map((item) =>(
-              <CartItem title={item.name} image={item.image} color={item.color} price={item.price} size={item.size} quantity={item.quantity}></CartItem>
+            {data.cart.map((item) => (
+              <CartItem
+                title={item.name}
+                image={item.image}
+                color={item.color}
+                price={item.price}
+                size={item.size}
+                quantity={item.quantity}
+              ></CartItem>
             ))}
+            <CartItem
+              title={name}
+              image={image}
+              color={color}
+              price={price}
+              size={"XL"}
+              quantity={1}
+            ></CartItem>
             <div className="space-y-2 text-center">
               <p className="text-lg text-center">
                 LEAVE A NOTE WITH YOUR ORDER
@@ -61,7 +75,7 @@ export default function CartModal(props: CartModalProps) {
             </div>
           </div>
         </div>
-      }
+      )}
     </>
   );
 }

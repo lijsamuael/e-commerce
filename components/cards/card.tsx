@@ -1,5 +1,6 @@
 "use client";
 import CardModal from "@/app/cardModal/page";
+import CartModal from "@/app/cartModal/page";
 import { useState } from "react";
 
 export default function Card({
@@ -22,15 +23,28 @@ export default function Card({
   sizes?: string[];
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isCartOpen, setCarIsOpen] = useState(false);
+  function handleOpen() {
+    setIsOpen(true);
+  }
   function handleClose() {
     setIsOpen(false);
+  }
+  function handleCartOpen() {
+    setIsOpen(false);
+    setCarIsOpen(true);
+  }
+
+  function handleCartClose() {
+    setIsOpen(false);
+    setCarIsOpen(false);
   }
 
   return (
     <>
       <div
         className="box-border gap-y-4 flex flex-col keen-slider__slide"
-        onClick={() => setIsOpen(true)}
+        onClick={handleOpen}
       >
         <div className="flex flex-col bg-gray-100  p-4 gap-y-8   2xl:gap-y-16 ">
           <div className="self-start bg-white border border-gray-200">
@@ -79,7 +93,19 @@ export default function Card({
           price={price}
           sizes={sizes!}
           closeAction={handleClose}
+          openCartAction={handleCartOpen}
           modalState={isOpen}
+        />
+      )}
+      {isCartOpen && (
+        <CartModal
+          image={image}
+          color={color}
+          name={name}
+          price={price}
+          sizes={sizes!}
+          closeCartAction={handleCartClose}
+          cartState={isCartOpen}
         />
       )}
     </>
