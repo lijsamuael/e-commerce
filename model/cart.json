@@ -1,0 +1,34 @@
+{
+  "cart": [
+    {
+      "name": "Ripple Button UP",
+      "image": "shirt1.png",
+      "tag": true,
+      "tagName": "New",
+      "price": 59.0,
+      "color": "red-700",
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL", "XLL"]
+    },
+    {
+      "name": "Tracker",
+      "image": "short1.png",
+      "tag": false,
+      "tagName": "",
+      "price": 59.0,
+      "color": "black",
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
+    },
+    {
+      "name": "Animalze",
+      "image": "short5.png",
+      "tag": false,
+      "tagName": "",
+      "price": 59.0,
+      "color": "black",
+      "rating": true,
+      "sizes": ["S", "M", "L", "XL"]
+    }
+  ]
+}
