@@ -43,7 +43,7 @@ export default function CardModal(props: CardModalProps) {
               <p>QUANTITY</p>
               <input
                 placeholder="1 "
-                type="text"
+                type="number"
                 className="border border-gray-400 w-12 px-2 py-1"
               />
             </div>
@@ -57,12 +57,11 @@ export default function CardModal(props: CardModalProps) {
               ></div>
               <p className="font-bold">SIZE</p>
               <div className="flex gap-x-4">
-                {sizes &&
-                  sizes.map((size) => (
-                    <span className="flex items-center justify-center active:border-2 active:border-indigo-500  border border-gray-600 h-8 w-8 text-xs">
-                      {size}
-                    </span>
-                  ))}
+                {sizes && sizes.map((size) => (
+                  <span className="flex items-center justify-center active:border-2 active:border-indigo-500  border border-gray-600 h-8 w-8 text-xs">
+                    {size}
+                  </span>
+                ))}
               </div>
             </div>
             <div className="space-y-4">
