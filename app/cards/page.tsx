@@ -16,8 +16,6 @@ export default function Cards() {
             price={shirt.price}
             color={shirt.color}
             rating={shirt.rating}
-            index={index}
-            array={array}
           />
         ))}
       </Carousel>
@@ -30,8 +28,6 @@ export default function Cards() {
             price={short.price}
             color={short.color}
             rating={short.rating}
-            index={index}
-            array={array}
           />
         ))}
       </Carousel>
@@ -44,8 +40,6 @@ export default function Cards() {
             price={best.price}
             color={best.color}
             rating={best.rating}
-            index={index}
-            array={array}
           />
         ))}
       </div>

@@ -19,7 +19,7 @@ export default function Card({
   price: number;
   color: string;
   rating?: boolean;
-  sizes: string[];
+  sizes?: string[];
 }) {
   const [isOpen, setIsOpen] = useState(false);
   function handleClose() {
@@ -77,7 +77,7 @@ export default function Card({
           color={color}
           name={name}
           price={price}
-          sizes={sizes}
+          sizes={sizes!}
           closeAction={handleClose}
           modalState={isOpen}
         />

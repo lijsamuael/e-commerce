@@ -1,8 +1,10 @@
 "use client";
 
 import CartItem from "@/components/cartModal/cartItem";
-import Link from "next/link";
 import { MouseEventHandler } from "react";
+import { isTemplateSpan } from "typescript";
+
+import data from "../../model/cart.json"
 
 interface CartModalProps {
   modalState: boolean;
@@ -32,8 +34,9 @@ export default function CartModal(props: CartModalProps) {
           <div className="overflow-y-auto top-0 w-[350px] bg-white h-full pt-8 space-y-4 px-4 flex flex-col  pb-8">
             <p className="text-center text-3xl font-bold">YOUR CART</p>
             <hr className="" />
-            <CartItem></CartItem>
-            <CartItem></CartItem>
+            {data.cart.map((item) =>(
+              <CartItem title={item.name} image={item.image} color={item.color} price={item.price} size={item.size} quantity={item.quantity}></CartItem>
+            ))}
             <div className="space-y-2 text-center">
               <p className="text-lg text-center">
                 LEAVE A NOTE WITH YOUR ORDER

@@ -8,7 +8,8 @@
       "price": 59.0,
       "color": "red-700",
       "rating": false,
-      "sizes": ["S", "M", "L", "XL", "XLL"]
+      "size": "S",
+      "quantity": 1
     },
     {
       "name": "Tracker",
@@ -18,7 +19,8 @@
       "price": 59.0,
       "color": "black",
       "rating": false,
-      "sizes": ["S", "M", "L", "XL"]
+      "size": "M",
+      "quantity": 2
     },
     {
       "name": "Animalze",
@@ -28,7 +30,8 @@
       "price": 59.0,
       "color": "black",
       "rating": true,
-      "sizes": ["S", "M", "L", "XL"]
+      "size": "XL",
+      "quantity": 1
     }
   ]
 }
