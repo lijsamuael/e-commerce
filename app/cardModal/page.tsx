@@ -22,14 +22,13 @@ export default function CardModal(props: CardModalProps) {
     <>
       {modalState && (
         <div className="fixed z-10 top-0 left-0 bg-gray-600 h-screen w-full flex items-start justify-end gap-x-4 bg-opacity-40">
-          <button className="top-0 w-4" onClick={handleClose}>
+          <button className="top-0 w-4 ml-4" onClick={handleClose}>
             <img className="pt-4" src="./icons/cancel.png " alt="" />
           </button>
           <div className="top-0 w-[300px] bg-white h-screen pt-8 space-y-4 px-4 flex flex-col ">
             <p className="text-center">SELECT OPTIONS</p>
             <h1 className="text-center text-3xl font-bold">{name}</h1>
-            <div className="flex flex-col bg-gray-100 mx-8 h-72 justify-center">
-              <div className="self-start bg-white border border-gray-200"></div>
+            <div className="flex flex-col bg-gray-100 mx-8 h-72 py-16 justify-center">
               <div className="self-center px-4">
                 <img
                   src={`./images/${image}`}
@@ -57,11 +56,12 @@ export default function CardModal(props: CardModalProps) {
               ></div>
               <p className="font-bold">SIZE</p>
               <div className="flex gap-x-4">
-                {sizes && sizes.map((size) => (
-                  <span className="flex items-center justify-center active:border-2 active:border-indigo-500  border border-gray-600 h-8 w-8 text-xs">
-                    {size}
-                  </span>
-                ))}
+                {sizes &&
+                  sizes.map((size) => (
+                    <span className="flex items-center justify-center active:border-2 active:border-indigo-500  border border-gray-600 h-8 w-8 text-xs">
+                      {size}
+                    </span>
+                  ))}
               </div>
             </div>
             <div className="space-y-4">
