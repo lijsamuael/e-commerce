@@ -7,7 +7,8 @@
       "tagName": "New",
       "price": 59.0,
       "color": "red-700",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL", "XLL"]
     },
     {
       "name": "Ripple Button UP",
@@ -16,7 +17,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -25,7 +27,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L"]
     },
     {
       "name": "Ripple Button UP",
@@ -34,7 +37,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -43,7 +47,8 @@
       "tagName": "New",
       "price": 59.0,
       "color": "red-700",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -52,7 +57,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -61,7 +67,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -70,7 +77,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -79,7 +87,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -88,7 +97,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -97,7 +107,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -106,7 +117,8 @@
       "tagName": "New",
       "price": 59.0,
       "color": "red-700",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -115,7 +127,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -124,7 +137,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Ripple Button UP",
@@ -133,7 +147,8 @@
       "tagName": "New",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     }
   ],
   "shorts": [
@@ -144,7 +159,8 @@
       "tagName": "",
       "price": 59.0,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -153,7 +169,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -162,7 +179,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -171,7 +189,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -180,7 +199,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -189,7 +209,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -198,7 +219,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -207,7 +229,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -216,7 +239,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Tracker",
@@ -225,7 +249,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     }
   ],
 
@@ -237,7 +262,8 @@
       "tagName": "",
       "price": 59.0,
       "color": "black",
-      "rating": true
+      "rating": true,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Balt Hat",
@@ -246,7 +272,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Big Cat",
@@ -255,7 +282,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     },
     {
       "name": "Cubz Button Up",
@@ -264,7 +292,8 @@
       "tagName": "",
       "price": 23.87,
       "color": "black",
-      "rating": false
+      "rating": false,
+      "sizes": ["S", "M", "L", "XL"]
     }
   ]
 }

@@ -7,6 +7,7 @@ export default function Home() {
       <Link href="/order">Order</Link>
       <Link href="/cards">Cards</Link>
       <Link href="/payment">Payment</Link>
+      <Link href="/cardModal">Card Modal</Link>
     </main>
   );
 }
