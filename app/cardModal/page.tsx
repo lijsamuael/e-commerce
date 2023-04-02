@@ -27,11 +27,11 @@ export default function CardModal(props: CardModalProps) {
   return (
     <>
       {modalState && (
-        <div className="fixed z-10 top-0 left-0 bg-gray-600 h-screen w-full flex items-start justify-end gap-x-4 bg-opacity-40">
+        <div className="y fixed z-10 top-0 left-0 bg-gray-600 h-screen w-full flex items-start justify-end gap-x-4 bg-opacity-40">
           <button className="top-0 w-4 ml-4" onClick={handleClose}>
             <img className="pt-4" src="./icons/cancel.png " alt="" />
           </button>
-          <div className="top-0 w-[300px] bg-white h-screen pt-8 space-y-4 px-4 flex flex-col ">
+          <div className="overflow-y-auto top-0 w-[300px] bg-white h-screen pt-8 space-y-4 px-4 flex flex-col ">
             <p className="text-center">SELECT OPTIONS</p>
             <h1 className="text-center text-3xl font-bold">{name}</h1>
             <div className="flex flex-col bg-gray-100 mx-8 h-72 py-16 justify-center">
