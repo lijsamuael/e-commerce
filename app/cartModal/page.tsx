@@ -23,6 +23,9 @@ export default function CartModal(props: CartModalProps) {
     props.closeCartAction(event);
   }
   const { cartState, image, price, name, color, sizes } = props;
+  let total = 0;
+  data.cart.map((item) => (total += item.price));
+  total += price;
   return (
     <>
       {cartState && (
@@ -58,7 +61,7 @@ export default function CartModal(props: CartModalProps) {
               <input type="text" className="w-full py-4 border-2" />
               <div className="flex flex-col">
                 <p className="text-2xl font-bold pt-4">Total</p>
-                <p className="text-xl font-semibold">$118.00 USD</p>
+                <p className="text-xl font-semibold">${total} USD</p>
               </div>
               <p className="text-lg font-semibold">
                 Taxes and shipping calculated at checkout
